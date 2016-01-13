@@ -1,4 +1,4 @@
-google.load("visualization", "1.0", {"packages":["corechart"]});
+google.load("visualization", "1", {packages:["corechart"]});
 
 google.setOnLoadCallback(drawChart);
 
@@ -16,9 +16,10 @@ function drawChart() {
   ]);
 
   var options = {
-    "title" : "How much of what, was on my pizza!",
-    "width" : 800,
-    "height": 600
+              title : "How much of what, was on my pizza!",
+              width : 500,
+             height : 400,
+    backgroundColor : '#E3F4FA'
   };
 
   var chart = new google.visualization.PieChart(document.getElementById("pie-chart"));
